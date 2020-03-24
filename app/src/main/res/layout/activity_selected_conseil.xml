@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selected Conseil"
-        android:textColor="@color/headerColor"
+        android:textColor="@color/colorAccent"
         android:textSize="16sp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"/>
@@ -34,7 +34,7 @@
         android:text="Selected Desc"
         android:layout_below="@id/selectedTitleConseil"
         android:layout_marginTop="10dp"
-        android:textColor="@color/headerColor"
+        android:textColor="@color/colorAccent"
         android:textSize="16sp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"/>

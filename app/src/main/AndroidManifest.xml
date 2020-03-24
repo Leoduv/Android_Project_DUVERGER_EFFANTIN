@@ -28,10 +28,13 @@
         <activity
             android:name=".AddOfferActivity"
             android:label="@string/app_name" />
-        <activity 
-            android:name=".ConseilActivity" 
+        <activity
+            android:name=".ConseilActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SelectedConseilActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
