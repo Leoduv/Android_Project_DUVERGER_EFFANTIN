@@ -37,7 +37,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         viewHolder.item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext,"Test", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(mContext,ConseilActivity.class);
+                mContext.startActivity(intent);
             }
         });
 

@@ -1,9 +1,11 @@
 package fr.esilvandroid.android_project;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,6 +25,8 @@ public class DashboardFragment extends Fragment {
     View v;
     private RecyclerView myrecyclerView;
     private List<Item> listItem;
+    private Context mContext;
+
 
 
     public DashboardFragment() {
@@ -36,7 +40,7 @@ public class DashboardFragment extends Fragment {
         v = inflater.inflate(R.layout.fragment_dashboard, container, false);
         myrecyclerView = (RecyclerView) v.findViewById(R.id.item_recyclerview);
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(),listItem);
-        myrecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        myrecyclerView.setLayoutManager(new GridLayoutManager(mContext,2));
         myrecyclerView.setAdapter(recyclerViewAdapter);
         return v;
     }
