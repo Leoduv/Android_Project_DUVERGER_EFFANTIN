@@ -6,4 +6,42 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="welcome_image">Welcome image</string>
+    <string name="title_dash">Dashboard</string>
+    <string name="title_mescandidatures">Mes candidatures</string>
+    <string name="title_offres">Offres</string>
+    <string name="title_conseils">Conseils</string>
+    <string name="title_candidature">Candidature</string>
+    <string name="companyname">Company name</string>
+    <string name="summary">Summary</string>
+    <string name="skills">Skills 1, Skill 2, Skill 3</string>
+    <string name="link">www.google.com</string>
+    <string name="status">Applied</string>
+    <string name="add_new_application">Add new application</string>
+    <string name="company_name">Company name</string>
+    <string name="job_title">Job title</string>
+    <string name="job_summary">Job summary</string>
+    <string name="used_skills">Used skills</string>
+    <string name="offer_link">Offer link</string>
+    <string name="application_status">Application status :</string>
+    <string name="company_hint">Company</string>
+    <string name="applied_radio">Applied</string>
+    <string name="interview_radio">Interview</string>
+    <string name="waiting_for_answer_radio">Waiting for answer</string>
+    <string name="enter_job_title">Enter job title</string>
+    <string name="enter_short_summary">Enter short summary</string>
+    <string name="enter_skills">Enter skills</string>
+    <string name="enter_link_to_the_offer">Enter link to the offer</string>
+    <string name="job_title_label">Job title</string>
+    <string name="button_save">Save</string>
 </resources>
