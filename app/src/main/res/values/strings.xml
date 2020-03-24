@@ -44,4 +44,7 @@
     <string name="enter_link_to_the_offer">Enter link to the offer</string>
     <string name="job_title_label">Job title</string>
     <string name="button_save">Save</string>
+    <string name="selected_desc">Selected Desc</string>
+    <string name="selected_conseil">Selected Conseil</string>
+    <string name="selected_conseils">Selected Conseils</string>
 </resources>

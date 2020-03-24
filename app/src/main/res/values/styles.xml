@@ -9,7 +9,7 @@
     </style>
 
     <style name="ToolBar">
-        <item name="android:editTextColor">@color/colorWhite</item>
+        <item name="android:editTextColor">#000000</item>
     </style>
 
 </resources>

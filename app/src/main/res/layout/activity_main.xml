@@ -13,10 +13,10 @@
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         app:tabIndicatorColor="@color/colorPrimaryDark"
-        app:tabMode="fixed"></com.google.android.material.tabs.TabLayout>
+        app:tabMode="fixed" />
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager_id"></androidx.viewpager.widget.ViewPager>
+        android:id="@+id/viewpager_id" />
 </LinearLayout>
