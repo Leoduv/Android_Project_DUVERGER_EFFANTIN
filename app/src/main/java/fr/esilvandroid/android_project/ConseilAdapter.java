@@ -105,9 +105,8 @@ public class ConseilAdapter extends RecyclerView.Adapter<ConseilAdapter.Conseils
         TextView tvPrefix;
         TextView tvTitle;
         TextView tvDesc;
-        ImageView imIcon;
 
-        public ConseilsAdapterVh(@NonNull View itemView) {
+        public ConseilsAdapterVh(@NonNull final View itemView) {
             super(itemView);
             tvPrefix = itemView.findViewById(R.id.prefix);
             tvTitle = itemView.findViewById(R.id.title);

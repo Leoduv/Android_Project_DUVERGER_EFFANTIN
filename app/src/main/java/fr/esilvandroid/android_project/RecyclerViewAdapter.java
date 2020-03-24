@@ -3,6 +3,7 @@ package fr.esilvandroid.android_project;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -37,6 +39,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         viewHolder.item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(mContext,ConseilActivity.class);
                 mContext.startActivity(intent);
             }
@@ -45,11 +48,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return viewHolder;
     }
 
+
+
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         holder.tv_item_title.setText(mData.get(position).getItemTitle());
         holder.img_item_title.setImageResource(mData.get(position).getItemview());
+        holder.tv_site_title.setText(mData.get(position).getSite());
 
 
     }
@@ -64,6 +70,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         private CardView item;
         private TextView tv_item_title;
         private ImageView img_item_title;
+        private TextView tv_site_title;
 
         public MyViewHolder(View itemView){
             super((itemView));
@@ -71,6 +78,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             item = (CardView) itemView.findViewById(R.id.cardview_id);
             tv_item_title = (TextView) itemView.findViewById(R.id.item_title_id);
             img_item_title = (ImageView) itemView.findViewById(R.id.item_img_id);
+            tv_site_title = (TextView) itemView.findViewById(R.id.item_site_id);
         }
     }
 }
