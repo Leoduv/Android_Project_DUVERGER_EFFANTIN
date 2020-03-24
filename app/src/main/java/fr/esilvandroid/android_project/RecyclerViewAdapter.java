@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -31,8 +32,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         View view;
         LayoutInflater inflater = LayoutInflater.from(mContext);
         view = inflater.inflate(R.layout.cardview_item, parent, false);
+        MyViewHolder viewHolder = new MyViewHolder(view);
 
-        return new MyViewHolder(view);
+        viewHolder.item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext,ConseilActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
+
+        return viewHolder;
     }
 
     @Override
@@ -51,14 +61,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        private LinearLayout item;
+        private CardView item;
         private TextView tv_item_title;
         private ImageView img_item_title;
-        private CardView cardView;
 
         public MyViewHolder(View itemView){
             super((itemView));
 
+            item = (CardView) itemView.findViewById(R.id.cardview_id);
             tv_item_title = (TextView) itemView.findViewById(R.id.item_title_id);
             img_item_title = (ImageView) itemView.findViewById(R.id.item_img_id);
         }
