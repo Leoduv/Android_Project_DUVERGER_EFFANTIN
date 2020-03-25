@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selected Conseils"
+            android:text="@string/selected_conseils"
             android:textColor="@color/colorWhite"
             android:textSize="16sp"
             android:layout_gravity="center"/>
@@ -22,7 +22,7 @@
         android:id="@+id/selectedTitleConseil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selected Conseil"
+        android:text="@string/selected_conseil"
         android:textColor="@color/headerColor"
         android:textSize="16sp"
         android:layout_centerInParent="true"
@@ -31,7 +31,7 @@
         android:id="@+id/selectedDescConseil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selected Desc"
+        android:text="@string/selected_desc"
         android:layout_below="@id/selectedTitleConseil"
         android:layout_marginTop="10dp"
         android:textColor="@color/headerColor"
