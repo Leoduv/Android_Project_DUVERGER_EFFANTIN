@@ -28,10 +28,11 @@
         <TextView
             android:id="@+id/item_site_id"
             android:layout_width="match_parent"
-            android:textSize="23sp"
+            android:textSize="13sp"
             android:gravity="center"
             android:layout_height="match_parent"
-            android:text="Site"/>
+            android:text="Site"
+            android:textStyle="italic"/>
 
     </LinearLayout>
 
