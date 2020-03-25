@@ -6,7 +6,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -50,10 +49,10 @@ public class DashboardFragment extends Fragment {
         super.onCreate(savedInstanceStats);
 
         listItem = new ArrayList<>();
-        listItem.add(new Item("Mes candidatures", R.drawable.ic_assignment_black_24dp));
-        listItem.add(new Item("Mes offres", R.drawable.ic_assignment_turned_in_black_24dp));
-        listItem.add(new Item("Conseils", R.drawable.ic_help_black_24dp));
-        listItem.add(new Item("API", R.drawable.ic_attachment_black_24dp));
+        listItem.add(new Item("LinkedIn", R.drawable.linkedin, "https://www.linkedin.com/feed/"));
+        listItem.add(new Item("Indeed", R.drawable.indeed_log, "https://www.indeed.fr"));
+        listItem.add(new Item("Monster", R.drawable.monster, "https://www.indeed.fr"));
+        listItem.add(new Item("Météo Job", R.drawable.meteojob, "https://www.meteojob.com"));
 
     }
 

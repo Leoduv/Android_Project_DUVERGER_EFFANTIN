@@ -7,10 +7,12 @@ import androidx.appcompat.view.menu.MenuView;
 public class Item {
 
     private String ItemTitle;
+    private String Site;
     private int Itemview;
 
-    public Item(String itemTitle, int imgView) {
+    public Item(String itemTitle, int imgView, String site) {
         ItemTitle = itemTitle;
+        Site = site;
         Itemview = imgView;
     }
 
@@ -28,6 +30,14 @@ public class Item {
 
     public void setItemview(int itemview) {
         Itemview = itemview;
+    }
+
+    public String getSite() {
+        return Site;
+    }
+
+    public void setSite(String site) {
+        Site = site;
     }
 }
 
